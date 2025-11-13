@@ -26,6 +26,13 @@ remove_symlink "$HOME/.zprofile"
 # Git
 remove_symlink "$HOME/.gitconfig"
 
+# Kitty
+remove_symlink "$HOME/.config/kitty/kitty.conf"
+remove_symlink "$HOME/.config/kitty/current-theme.conf"
+
+# SSH
+remove_symlink "$HOME/.ssh/config"
+
 echo ""
 echo "✅ Desinstalação concluída!"
 echo "💡 Restaure seus backups de ~/dotfiles_backup_* se necessário"

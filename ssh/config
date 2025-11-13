@@ -1,0 +1,109 @@
+Host            desktop-stg
+  User            helio
+  HostName      192.168.100.132
+
+Host            prod-primaria
+  User            helio
+  HostName        3.209.185.128
+
+Host              prod-secundaria
+  User            helio
+  HostName        52.53.215.198
+
+Host thinkpad-NOC
+  User  helio
+  HostName  192.168.90.101
+  ForwardAgent yes
+
+Host thinkpad-dev
+  User  helio
+  HostName  192.168.90.104
+  ForwardAgent yes
+
+  # Host thinkpad-dev-large
+  # User  helio
+  # HostName  192.168.90.131
+  # ForwardAgent yes
+
+Host MONIT-MTZ
+  User            helio
+  HostName        10.10.11.129
+  ForwardAgent    yes
+  ProxyJump       thinkpad
+
+Host granado-linux-fabrica
+  User            helio
+  HostName        10.20.0.169
+  ProxyJump       granado-linux-mtz
+  ForwardAgent      yes
+
+Host granado-linux-cd
+  User            helio
+  HostName        10.50.0.239
+  ProxyJump       granado-linux-mtz
+  ForwardAgent  yes
+
+Host granado-linux-stg
+  User      helio
+  HostName  10.10.11.84
+  ProxyJump     thinkpad-dev
+  ForwardAgent yes
+
+Host              MONIT-DSSP
+    User              helio
+    HostName        10.70.0.237
+    ProxyJump        granado-linux-mtz
+
+Host              MONIT-MTZ-DEV
+    User              helio
+    HostName        10.10.11.129
+    ProxyJump       granado-linux-mtz
+    ForwardAgent  yes
+
+Host lyx-stg
+  User helio
+  HostName 10.0.0.10
+
+Host github.com-cogc
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_ed25519_cogc
+
+Host cogcs
+  HostName 144.22.140.217
+  User ubuntu
+  IdentityFile ~/.ssh/cogcs
+
+Host stg-tempadmin
+  HostName 144.22.140.217
+  User tempadmin
+  IdentityFile ~/.ssh/cogcs
+
+
+
+Host rpa-teste
+  User helio
+  HostName 10.10.11.124
+
+Host            FTZ02gpu
+  HostName      45.174.64.55
+  Port          22322
+  ForwardAgent  yes
+  User          helio
+
+Host            aws-stage-01
+  User            helio
+  HostName        44.210.137.63
+  ForwardAgent    yes
+
+Host helio-oracle
+  User opc
+  HostName 168.138.252.239
+  IdentityFile ~/.ssh/helio-oracle.key
+  StrictHostKeyChecking no
+
+
+Host              thinkpad-dev-large
+    User            helio
+    HostName        100.64.5.10
+    ForwardAgent    yes

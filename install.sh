@@ -42,6 +42,25 @@ create_symlink "$DOTFILES_DIR/zsh/zprofile" "$HOME/.zprofile"
 echo "🌿 Configurando Git..."
 create_symlink "$DOTFILES_DIR/git/gitconfig" "$HOME/.gitconfig"
 
+# Kitty Terminal
+if [ -d "$DOTFILES_DIR/kitty" ]; then
+    echo "🐱 Configurando Kitty..."
+    mkdir -p "$HOME/.config/kitty"
+    create_symlink "$DOTFILES_DIR/kitty/kitty.conf" "$HOME/.config/kitty/kitty.conf"
+    if [ -f "$DOTFILES_DIR/kitty/current-theme.conf" ]; then
+        create_symlink "$DOTFILES_DIR/kitty/current-theme.conf" "$HOME/.config/kitty/current-theme.conf"
+    fi
+fi
+
+# SSH Config (com permissões corretas)
+if [ -f "$DOTFILES_DIR/ssh/config" ]; then
+    echo "🔐 Configurando SSH..."
+    mkdir -p "$HOME/.ssh"
+    create_symlink "$DOTFILES_DIR/ssh/config" "$HOME/.ssh/config"
+    chmod 700 "$HOME/.ssh"
+    chmod 600 "$HOME/.ssh/config"
+fi
+
 echo ""
 echo "✨ Instalação concluída!"
 echo "🔄 Execute 'source ~/.zshrc' ou reinicie o terminal para aplicar as mudanças"

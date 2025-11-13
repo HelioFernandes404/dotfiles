@@ -26,3 +26,11 @@ Thumbs.db
 
 # Diretórios locais
 local/
+
+# SSH - NUNCA commitar chaves privadas!
+ssh/id_*
+ssh/*.pem
+ssh/*.ppk
+ssh/known_hosts
+ssh/authorized_keys
+ssh/*.pub

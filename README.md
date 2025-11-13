@@ -8,6 +8,8 @@ Este repositório contém configurações para:
 
 - **ZSH** - Shell configuration (`.zshrc`, `.zprofile`)
 - **Git** - Version control settings (`.gitconfig`)
+- **Kitty** - Terminal emulator config (`kitty.conf`, `current-theme.conf`)
+- **SSH** - SSH client configuration (`.ssh/config`) ⚠️ **sem chaves privadas**
 
 ## 🚀 Instalação
 
@@ -50,6 +52,12 @@ O script `install.sh` cria **symlinks** dos arquivos de configuração do diret�
 │   └── zprofile    → ~/.zprofile
 ├── git/
 │   └── gitconfig   → ~/.gitconfig
+├── kitty/
+│   ├── kitty.conf          → ~/.config/kitty/kitty.conf
+│   └── current-theme.conf  → ~/.config/kitty/current-theme.conf
+├── ssh/
+│   ├── config      → ~/.ssh/config
+│   └── README.md   (avisos de segurança)
 ├── install.sh      (script de instalação)
 ├── uninstall.sh    (script de remoção)
 └── README.md
@@ -90,6 +98,18 @@ git push
 - Os arquivos originais são **automaticamente backupeados** em `~/dotfiles_backup_*` antes da instalação
 - **Nunca** commite arquivos com senhas, tokens ou informações sensíveis
 - Revise o `.gitignore` para garantir que arquivos sensíveis não sejam versionados
+
+### ⚠️ Segurança SSH
+
+**ATENÇÃO:** Este repositório contém apenas o arquivo `ssh/config`.
+
+**NUNCA adicione ao Git:**
+- ❌ Chaves privadas SSH (`id_rsa`, `id_ed25519`, etc.)
+- ❌ Arquivos `known_hosts`
+- ❌ Chaves `.pem`, `.ppk`
+- ❌ Tokens ou certificados
+
+O `.gitignore` já está configurado para bloquear esses arquivos, mas sempre revise antes de commitar!
 
 ## 🔧 Personalização
 
