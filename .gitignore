@@ -1,0 +1,28 @@
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.backup
+*.bak
+*~
+
+# Arquivos sensíveis (tokens, senhas, etc.)
+*.token
+*.key
+*_token
+*_pass
+.vault_*
+
+# Históricos
+.zsh_history
+.bash_history
+.python_history
+.lesshst
+
+# Cache
+*.zwc
+.zcompdump*
+
+# Diretórios locais
+local/

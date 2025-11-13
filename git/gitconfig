@@ -1,0 +1,16 @@
+[user]
+	email = heliodevhub@gmail.com
+	name = heliofernandes404
+[alias]
+	st = status
+	co = checkout
+	br = branch
+	ci = commit
+	bra = branch -a
+	cam = commit -am
+	lg = log --oneline --graph --decorate
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	cob = checkout -b
+	df = diff
+	dc = diff --cached
+	aa = add --all
