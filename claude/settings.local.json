@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ssh cogcs \"cat > ~/.bash_history << ''EOF''\n# Cleared corrupted history\nEOF\n\")",
+      "Bash(ssh:*)",
+      "Bash(echo:*)",
+      "Bash(test:*)",
+      "Bash(mkdir:*)",
+      "Bash(chmod:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(gh repo create:*)",
+      "Bash(tree:*)",
+      "Bash(cat:*)",
+      "Bash(git push:*)",
+      "WebFetch(domain:code.claude.com)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

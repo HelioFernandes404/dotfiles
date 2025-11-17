@@ -1,0 +1,22 @@
+[
+  {
+    "content": "Verificar credenciais do GitHub com gh",
+    "status": "completed",
+    "activeForm": "Verifying GitHub credentials with gh"
+  },
+  {
+    "content": "Criar novo repositório no GitHub pessoal com gh",
+    "status": "in_progress",
+    "activeForm": "Creating new GitHub repository"
+  },
+  {
+    "content": "Clonar projeto Alvorada em diretório temporário",
+    "status": "pending",
+    "activeForm": "Cloning Alvorada project to temporary directory"
+  },
+  {
+    "content": "Fazer push do projeto para novo repositório",
+    "status": "pending",
+    "activeForm": "Pushing project to new repository"
+  }
+]

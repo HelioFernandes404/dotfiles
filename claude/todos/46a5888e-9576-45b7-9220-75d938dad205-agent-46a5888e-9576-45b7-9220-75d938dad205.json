@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Create .env file with database credentials",
+    "status": "completed",
+    "activeForm": "Creating .env file"
+  },
+  {
+    "content": "Verify database connection and run migrations",
+    "status": "in_progress",
+    "activeForm": "Verifying database connection and running migrations"
+  },
+  {
+    "content": "Create superuser for admin access",
+    "status": "pending",
+    "activeForm": "Creating superuser"
+  },
+  {
+    "content": "Collect static files",
+    "status": "pending",
+    "activeForm": "Collecting static files"
+  },
+  {
+    "content": "Start development server",
+    "status": "pending",
+    "activeForm": "Starting development server"
+  }
+]

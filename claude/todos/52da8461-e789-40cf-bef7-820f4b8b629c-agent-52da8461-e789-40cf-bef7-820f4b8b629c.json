@@ -1,0 +1,42 @@
+[
+  {
+    "content": "Task 1: Update Supabase Service - verify_token Method",
+    "status": "completed",
+    "activeForm": "Implementing verify_token method with TDD"
+  },
+  {
+    "content": "Task 2: Update Supabase Sync - Email Conflict Validation",
+    "status": "completed",
+    "activeForm": "Adding email conflict validation to sync"
+  },
+  {
+    "content": "Task 3: Create Authentication Middleware",
+    "status": "completed",
+    "activeForm": "Creating AuthMiddleware with TDD"
+  },
+  {
+    "content": "Task 4: Update Security Dependencies",
+    "status": "completed",
+    "activeForm": "Adding get_current_user dependencies"
+  },
+  {
+    "content": "Task 5: Register Middleware in Application",
+    "status": "in_progress",
+    "activeForm": "Registering AuthMiddleware in main.py"
+  },
+  {
+    "content": "Task 6: Integration Test - End-to-End Social Login",
+    "status": "pending",
+    "activeForm": "Writing integration tests for social login flow"
+  },
+  {
+    "content": "Task 7: Update Documentation",
+    "status": "pending",
+    "activeForm": "Documenting social login architecture"
+  },
+  {
+    "content": "Task 8: Update .env.example",
+    "status": "pending",
+    "activeForm": "Updating Supabase configuration examples"
+  }
+]

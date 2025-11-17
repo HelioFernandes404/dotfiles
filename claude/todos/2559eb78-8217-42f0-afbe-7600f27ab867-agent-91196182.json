@@ -1,0 +1,37 @@
+[
+  {
+    "content": "Create core/models.py with all 5 models (Training, Classroom, Resource, Student, Enrollment)",
+    "status": "completed",
+    "activeForm": "Creating core/models.py with all 5 models"
+  },
+  {
+    "content": "Run makemigrations and verify migration file created",
+    "status": "completed",
+    "activeForm": "Running makemigrations and verifying migration file"
+  },
+  {
+    "content": "Run migrate and verify migration applies successfully",
+    "status": "completed",
+    "activeForm": "Running migrate and verifying migration applies"
+  },
+  {
+    "content": "Register models in admin.py with list_display, search_fields, list_filter",
+    "status": "completed",
+    "activeForm": "Registering models in admin.py"
+  },
+  {
+    "content": "Create superuser for admin panel testing",
+    "status": "completed",
+    "activeForm": "Creating superuser for admin panel testing"
+  },
+  {
+    "content": "Start dev server and test admin panel",
+    "status": "completed",
+    "activeForm": "Testing admin panel"
+  },
+  {
+    "content": "Commit changes with descriptive message",
+    "status": "in_progress",
+    "activeForm": "Committing changes"
+  }
+]

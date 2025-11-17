@@ -1,0 +1,22 @@
+[
+  {
+    "content": "Analisar o primeiro erro de assertion (1 == 5)",
+    "status": "completed",
+    "activeForm": "Analisando o primeiro erro de assertion (1 == 5)"
+  },
+  {
+    "content": "Investigar o segundo erro de AttributeError no módulo utils",
+    "status": "completed",
+    "activeForm": "Investigando o segundo erro de AttributeError no módulo utils"
+  },
+  {
+    "content": "Investigar como o código real funciona no módulo glpi.py",
+    "status": "completed",
+    "activeForm": "Investigando como o código real funciona no módulo glpi.py"
+  },
+  {
+    "content": "Criar plano de correção dos testes",
+    "status": "in_progress",
+    "activeForm": "Criando plano de correção dos testes"
+  }
+]

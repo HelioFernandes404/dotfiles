@@ -1,0 +1,17 @@
+[
+  {
+    "content": "Check current branch and status",
+    "status": "completed",
+    "activeForm": "Checking current branch and status"
+  },
+  {
+    "content": "Create new branch from current branch",
+    "status": "in_progress",
+    "activeForm": "Creating new branch from current branch"
+  },
+  {
+    "content": "Verify branch creation and confirm isolation",
+    "status": "pending",
+    "activeForm": "Verifying branch creation and confirm isolation"
+  }
+]

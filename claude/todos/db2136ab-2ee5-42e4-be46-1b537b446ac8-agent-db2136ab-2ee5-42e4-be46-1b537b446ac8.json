@@ -1,0 +1,22 @@
+[
+  {
+    "content": "Task 6: Create integration tests for end-to-end social login flow",
+    "status": "completed",
+    "activeForm": "Creating integration tests for end-to-end social login flow"
+  },
+  {
+    "content": "Task 7: Update CLAUDE.md with social login architecture documentation",
+    "status": "completed",
+    "activeForm": "Updating CLAUDE.md with social login architecture documentation"
+  },
+  {
+    "content": "Task 8: Update .env.example with Supabase configuration",
+    "status": "completed",
+    "activeForm": "Updating .env.example with Supabase configuration"
+  },
+  {
+    "content": "Final verification: Run all tests and verify implementation",
+    "status": "in_progress",
+    "activeForm": "Running all tests and verifying implementation"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "content": "Identify the typecheck command for this project",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Run typecheck to identify errors",
+    "status": "pending",
+    "id": "2"
+  },
+  {
+    "content": "Fix all typecheck errors",
+    "status": "pending",
+    "id": "3"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "content": "Identify the bug in the repository URL construction",
+    "status": "completed",
+    "activeForm": "Identifying the bug in the repository URL construction"
+  },
+  {
+    "content": "Fix the repo_url construction to include __cogcs suffix",
+    "status": "completed",
+    "activeForm": "Fixing the repo_url construction to include __cogcs suffix"
+  },
+  {
+    "content": "Test the fix by running the script",
+    "status": "in_progress",
+    "activeForm": "Testing the fix by running the script"
+  }
+]

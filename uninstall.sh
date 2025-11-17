@@ -33,6 +33,15 @@ remove_symlink "$HOME/.config/kitty/current-theme.conf"
 # SSH
 remove_symlink "$HOME/.ssh/config"
 
+# Yazi
+remove_symlink "$HOME/.config/yazi"
+
+# Neovim
+remove_symlink "$HOME/.config/nvim"
+
+# Claude Code
+remove_symlink "$HOME/.claude"
+
 echo ""
 echo "✅ Desinstalação concluída!"
 echo "💡 Restaure seus backups de ~/dotfiles_backup_* se necessário"

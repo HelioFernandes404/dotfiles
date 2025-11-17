@@ -1,0 +1,12 @@
+{
+  "includeCoAuthoredBy": false,
+  "statusLine": {
+    "type": "command",
+    "command": "printf '[%s@%s %s]' \"$(whoami)\" \"$(hostname -s)\" \"$(basename \"$(pwd)\")\""
+  },
+  "enabledPlugins": {
+    "superpowers@superpowers-marketplace": true,
+    "superpowers-chrome@superpowers-marketplace": false
+  },
+  "alwaysThinkingEnabled": true
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "content": "Gerar traduções para todos os 7 idiomas usando Claude API",
+    "status": "pending",
+    "activeForm": "Gerando traduções para todos os idiomas"
+  },
+  {
+    "content": "Criar arquivos JSON de tradução (es.json, fr.json, de.json, it.json, ja.json, zh.json)",
+    "status": "pending",
+    "activeForm": "Criando arquivos JSON de tradução"
+  },
+  {
+    "content": "Atualizar src/i18n/i18n.ts com todos os idiomas",
+    "status": "pending",
+    "activeForm": "Atualizando configuração de i18n"
+  },
+  {
+    "content": "Atualizar LanguageSwitcher.tsx com todos os idiomas",
+    "status": "pending",
+    "activeForm": "Atualizando seletor de idiomas"
+  },
+  {
+    "content": "Criar src/i18n/rtl.config.ts para suporte RTL futuro",
+    "status": "pending",
+    "activeForm": "Criando configuração RTL"
+  },
+  {
+    "content": "Testar todas as linguagens no navegador",
+    "status": "pending",
+    "activeForm": "Testando todas as linguagens"
+  },
+  {
+    "content": "Fazer commit das mudanças",
+    "status": "pending",
+    "activeForm": "Fazendo commit das mudanças"
+  }
+]

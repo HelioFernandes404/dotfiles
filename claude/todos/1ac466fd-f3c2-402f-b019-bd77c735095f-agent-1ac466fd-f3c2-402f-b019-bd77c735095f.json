@@ -1,0 +1,42 @@
+[
+  {
+    "content": "Analisar estrutura de navegação e rotas do mobile",
+    "status": "in_progress",
+    "activeForm": "Analisando estrutura de navegação e rotas do mobile"
+  },
+  {
+    "content": "Verificar se endpoint de login existe no backend",
+    "status": "pending",
+    "activeForm": "Verificando se endpoint de login existe no backend"
+  },
+  {
+    "content": "Definir estratégia de persistência de tokens (AsyncStorage)",
+    "status": "pending",
+    "activeForm": "Definindo estratégia de persistência de tokens"
+  },
+  {
+    "content": "Implementar login no backend (se necessário)",
+    "status": "pending",
+    "activeForm": "Implementando login no backend"
+  },
+  {
+    "content": "Implementar login no mobile",
+    "status": "pending",
+    "activeForm": "Implementando login no mobile"
+  },
+  {
+    "content": "Implementar redirecionamento após cadastro",
+    "status": "pending",
+    "activeForm": "Implementando redirecionamento após cadastro"
+  },
+  {
+    "content": "Implementar redirecionamento após login",
+    "status": "pending",
+    "activeForm": "Implementando redirecionamento após login"
+  },
+  {
+    "content": "Testar fluxo completo de autenticação",
+    "status": "pending",
+    "activeForm": "Testando fluxo completo de autenticação"
+  }
+]

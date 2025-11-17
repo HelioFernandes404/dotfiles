@@ -1,0 +1,12 @@
+[
+  {
+    "content": "Fix: Add entity_id filter to ticket search query",
+    "status": "completed",
+    "activeForm": "Adding entity_id filter to ticket search query"
+  },
+  {
+    "content": "Test all three fixes together",
+    "status": "in_progress",
+    "activeForm": "Testing all three fixes together"
+  }
+]

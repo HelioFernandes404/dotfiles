@@ -1,0 +1,17 @@
+[
+  {
+    "content": "Examine the Helm repository error in install_nginx_controller.yml",
+    "status": "completed",
+    "activeForm": "Examining the Helm repository error in install_nginx_controller.yml"
+  },
+  {
+    "content": "Fix the Helm repository configuration issue",
+    "status": "completed",
+    "activeForm": "Fixing the Helm repository configuration issue"
+  },
+  {
+    "content": "Test the fix by running the playbook in check mode",
+    "status": "in_progress",
+    "activeForm": "Testing the fix by running the playbook in check mode"
+  }
+]

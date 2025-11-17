@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Verificar estrutura atual do dotfiles",
+    "status": "completed",
+    "activeForm": "Verificando estrutura atual do dotfiles"
+  },
+  {
+    "content": "Localizar configurações do Neovim, Yazi e Claude Code",
+    "status": "completed",
+    "activeForm": "Localizando configurações"
+  },
+  {
+    "content": "Copiar configs para dotfiles/",
+    "status": "in_progress",
+    "activeForm": "Copiando configs para dotfiles/"
+  },
+  {
+    "content": "Atualizar install.sh",
+    "status": "pending",
+    "activeForm": "Atualizando install.sh"
+  },
+  {
+    "content": "Atualizar uninstall.sh",
+    "status": "pending",
+    "activeForm": "Atualizando uninstall.sh"
+  }
+]

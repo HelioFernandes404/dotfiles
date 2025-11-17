@@ -1,0 +1,17 @@
+[
+  {
+    "content": "Create basic Ansible project structure with playbook and inventory",
+    "status": "in_progress",
+    "activeForm": "Creating basic Ansible project structure"
+  },
+  {
+    "content": "Run the Ansible playbook and identify any issues",
+    "status": "pending",
+    "activeForm": "Running Ansible playbook and identifying issues"
+  },
+  {
+    "content": "Fix any issues that arise during execution",
+    "status": "pending",
+    "activeForm": "Fixing issues from playbook execution"
+  }
+]

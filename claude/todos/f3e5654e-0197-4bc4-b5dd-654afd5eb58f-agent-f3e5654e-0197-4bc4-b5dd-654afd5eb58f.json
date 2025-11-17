@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Fix LaunchDarkly initialization in config.py to be lazy-loaded",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Update create_incident.py to handle LaunchDarkly initialization gracefully",
+    "status": "in_progress",
+    "id": "2"
+  },
+  {
+    "content": "Fix unused imports across all files",
+    "status": "pending",
+    "id": "3"
+  },
+  {
+    "content": "Fix line length violations",
+    "status": "pending",
+    "id": "4"
+  },
+  {
+    "content": "Run tests to verify fixes work",
+    "status": "pending",
+    "id": "5"
+  }
+]

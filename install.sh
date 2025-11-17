@@ -61,6 +61,26 @@ if [ -f "$DOTFILES_DIR/ssh/config" ]; then
     chmod 600 "$HOME/.ssh/config"
 fi
 
+# Yazi File Manager
+if [ -d "$DOTFILES_DIR/config/yazi" ]; then
+    echo "📁 Configurando Yazi..."
+    mkdir -p "$HOME/.config"
+    create_symlink "$DOTFILES_DIR/config/yazi" "$HOME/.config/yazi"
+fi
+
+# Neovim
+if [ -d "$DOTFILES_DIR/config/nvim" ]; then
+    echo "✏️  Configurando Neovim..."
+    mkdir -p "$HOME/.config"
+    create_symlink "$DOTFILES_DIR/config/nvim" "$HOME/.config/nvim"
+fi
+
+# Claude Code
+if [ -d "$DOTFILES_DIR/claude" ]; then
+    echo "🤖 Configurando Claude Code..."
+    create_symlink "$DOTFILES_DIR/claude" "$HOME/.claude"
+fi
+
 echo ""
 echo "✨ Instalação concluída!"
 echo "🔄 Execute 'source ~/.zshrc' ou reinicie o terminal para aplicar as mudanças"

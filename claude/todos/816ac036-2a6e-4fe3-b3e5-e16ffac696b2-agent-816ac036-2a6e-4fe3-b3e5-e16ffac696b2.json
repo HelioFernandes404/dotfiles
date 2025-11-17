@@ -1,0 +1,42 @@
+[
+  {
+    "content": "Task 1: Create Static Directory Structure",
+    "status": "completed",
+    "activeForm": "Implementing Task 1"
+  },
+  {
+    "content": "Task 2: Create Photographer Login Page",
+    "status": "completed",
+    "activeForm": "Implementing Task 2"
+  },
+  {
+    "content": "Task 3: Create Photographer Login JavaScript",
+    "status": "completed",
+    "activeForm": "Implementing Task 3"
+  },
+  {
+    "content": "Task 4: Create Photographer Dashboard HTML",
+    "status": "completed",
+    "activeForm": "Implementing Task 4"
+  },
+  {
+    "content": "Task 5: Create Photographer Dashboard JavaScript",
+    "status": "completed",
+    "activeForm": "Implementing Task 5"
+  },
+  {
+    "content": "Task 6: Create Client Gallery Page",
+    "status": "completed",
+    "activeForm": "Implementing Task 6"
+  },
+  {
+    "content": "Task 7: Create Client Gallery JavaScript",
+    "status": "in_progress",
+    "activeForm": "Implementing Task 7"
+  },
+  {
+    "content": "Task 8: Test All Features End-to-End",
+    "status": "pending",
+    "activeForm": "Implementing Task 8"
+  }
+]

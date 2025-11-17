@@ -1,0 +1,22 @@
+[
+  {
+    "content": "Read existing request_payload.json to understand structure",
+    "status": "completed",
+    "activeForm": "Reading existing request_payload.json"
+  },
+  {
+    "content": "Create error test payload with invalid sysframe_id",
+    "status": "completed",
+    "activeForm": "Creating error test payload with invalid sysframe_id"
+  },
+  {
+    "content": "Test success payload with fire command",
+    "status": "in_progress",
+    "activeForm": "Testing success payload with fire command"
+  },
+  {
+    "content": "Test error payload with fire command",
+    "status": "pending",
+    "activeForm": "Testing error payload with fire command"
+  }
+]

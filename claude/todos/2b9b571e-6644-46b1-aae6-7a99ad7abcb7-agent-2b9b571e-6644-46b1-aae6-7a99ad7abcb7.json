@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Switch to Node LTS v20",
+    "status": "completed",
+    "activeForm": "Switching to Node LTS v20"
+  },
+  {
+    "content": "Clean project dependencies and cache",
+    "status": "completed",
+    "activeForm": "Cleaning project dependencies and cache"
+  },
+  {
+    "content": "Reinstall dependencies with Node 20",
+    "status": "completed",
+    "activeForm": "Reinstalling dependencies with Node 20"
+  },
+  {
+    "content": "Fix missing worklets plugin",
+    "status": "completed",
+    "activeForm": "Fixing missing worklets plugin"
+  },
+  {
+    "content": "Test web server",
+    "status": "in_progress",
+    "activeForm": "Testing web server"
+  }
+]

@@ -1,0 +1,97 @@
+[
+  {
+    "content": "Task 1: Backend - Add sign_in method to Supabase service",
+    "status": "completed",
+    "activeForm": "Adding sign_in method to Supabase service"
+  },
+  {
+    "content": "Task 2: Backend - Create login schema",
+    "status": "completed",
+    "activeForm": "Creating login schema"
+  },
+  {
+    "content": "Task 3: Backend - Add /login endpoint",
+    "status": "completed",
+    "activeForm": "Adding /login endpoint"
+  },
+  {
+    "content": "Task 4: Backend - Verify /me endpoint exists",
+    "status": "completed",
+    "activeForm": "Verifying /me endpoint exists"
+  },
+  {
+    "content": "Task 5: Mobile - Install AsyncStorage",
+    "status": "completed",
+    "activeForm": "Installing AsyncStorage"
+  },
+  {
+    "content": "Task 6: Mobile - Add login and me methods to API client",
+    "status": "completed",
+    "activeForm": "Adding login and me methods to API client"
+  },
+  {
+    "content": "Task 7: Mobile - Add AsyncStorage utilities to AuthContext",
+    "status": "completed",
+    "activeForm": "Adding AsyncStorage utilities to AuthContext"
+  },
+  {
+    "content": "Task 8: Mobile - Add isAuthenticated and update AuthContext interface",
+    "status": "completed",
+    "activeForm": "Adding isAuthenticated to AuthContext"
+  },
+  {
+    "content": "Task 9: Mobile - Implement signIn method",
+    "status": "completed",
+    "activeForm": "Implementing signIn method"
+  },
+  {
+    "content": "Task 10: Mobile - Implement signOut method",
+    "status": "completed",
+    "activeForm": "Implementing signOut method"
+  },
+  {
+    "content": "Task 11: Mobile - Implement loadStoredAuth method",
+    "status": "completed",
+    "activeForm": "Implementing loadStoredAuth method"
+  },
+  {
+    "content": "Task 12: Mobile - Update signUp to save tokens",
+    "status": "completed",
+    "activeForm": "Updating signUp to save tokens"
+  },
+  {
+    "content": "Task 13: Mobile - Connect sign-in screen to signIn method",
+    "status": "completed",
+    "activeForm": "Connecting sign-in screen"
+  },
+  {
+    "content": "Task 14: Mobile - Add redirect after sign-up",
+    "status": "completed",
+    "activeForm": "Adding redirect after sign-up"
+  },
+  {
+    "content": "Task 15: Mobile - Create tabs layout with route protection",
+    "status": "in_progress",
+    "activeForm": "Creating tabs layout"
+  },
+  {
+    "content": "Task 16: Mobile - Create home screen",
+    "status": "pending",
+    "activeForm": "Creating home screen"
+  },
+  {
+    "content": "Task 17: Mobile - Add auto-login to root layout",
+    "status": "pending",
+    "activeForm": "Adding auto-login to root layout"
+  },
+  {
+    "content": "Task 18: Test complete authentication flow",
+    "status": "pending",
+    "activeForm": "Testing complete authentication flow"
+  },
+  {
+    "content": "Task 19: Push all commits",
+    "status": "pending",
+    "activeForm": "Pushing all commits"
+  }
+]

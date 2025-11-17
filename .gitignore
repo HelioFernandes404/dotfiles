@@ -34,3 +34,10 @@ ssh/*.ppk
 ssh/known_hosts
 ssh/authorized_keys
 ssh/*.pub
+
+# Claude Code - Credenciais e histórico de debug
+claude/.credentials.json
+claude/debug/
+claude/file-history/
+claude/projects/
+claude/history.jsonl

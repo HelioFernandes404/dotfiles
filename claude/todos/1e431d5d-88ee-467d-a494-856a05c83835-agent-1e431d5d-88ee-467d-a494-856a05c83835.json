@@ -1,0 +1,42 @@
+[
+  {
+    "content": "Criar estrutura básica de diretórios do Ansible",
+    "status": "completed",
+    "activeForm": "Criando estrutura básica de diretórios do Ansible"
+  },
+  {
+    "content": "Configurar arquivo ansible.cfg",
+    "status": "completed",
+    "activeForm": "Configurando arquivo ansible.cfg"
+  },
+  {
+    "content": "Criar inventory de exemplo",
+    "status": "completed",
+    "activeForm": "Criando inventory de exemplo"
+  },
+  {
+    "content": "Estruturar diretório de roles",
+    "status": "completed",
+    "activeForm": "Estruturando diretório de roles"
+  },
+  {
+    "content": "Criar role VictoriaMetrics com Helm",
+    "status": "in_progress",
+    "activeForm": "Criando role VictoriaMetrics com Helm"
+  },
+  {
+    "content": "Configurar group_vars e host_vars",
+    "status": "pending",
+    "activeForm": "Configurando group_vars e host_vars"
+  },
+  {
+    "content": "Criar playbooks de exemplo",
+    "status": "pending",
+    "activeForm": "Criando playbooks de exemplo"
+  },
+  {
+    "content": "Adicionar arquivos de documentação e controle de versão",
+    "status": "pending",
+    "activeForm": "Adicionando arquivos de documentação e controle de versão"
+  }
+]

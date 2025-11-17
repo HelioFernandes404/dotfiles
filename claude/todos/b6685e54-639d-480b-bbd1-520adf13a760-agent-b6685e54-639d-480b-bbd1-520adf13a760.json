@@ -1,0 +1,42 @@
+[
+  {
+    "content": "Backup current OTEL Collector ConfigMap",
+    "status": "completed",
+    "activeForm": "Backing up current OTEL Collector ConfigMap"
+  },
+  {
+    "content": "Edit OTEL Collector ConfigMap to fix endpoint",
+    "status": "completed",
+    "activeForm": "Editing OTEL Collector ConfigMap to fix endpoint"
+  },
+  {
+    "content": "Restart OTEL Collector pod",
+    "status": "completed",
+    "activeForm": "Restarting OTEL Collector pod"
+  },
+  {
+    "content": "Check for configuration errors in logs",
+    "status": "completed",
+    "activeForm": "Checking for configuration errors in logs"
+  },
+  {
+    "content": "Trigger metrics using cli-alertmanager and verify flow",
+    "status": "completed",
+    "activeForm": "Triggering metrics using cli-alertmanager and verifying flow"
+  },
+  {
+    "content": "Comprehensive metrics verification in VictoriaMetrics",
+    "status": "completed",
+    "activeForm": "Performing comprehensive metrics verification in VictoriaMetrics"
+  },
+  {
+    "content": "Create verification script",
+    "status": "in_progress",
+    "activeForm": "Creating verification script"
+  },
+  {
+    "content": "Document the manual fix",
+    "status": "pending",
+    "activeForm": "Documenting the manual fix"
+  }
+]

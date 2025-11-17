@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Diagnosticar URLs geradas pelo código atual (verificar barras duplas)",
+    "status": "completed",
+    "activeForm": "Diagnosticando URLs geradas pelo código atual"
+  },
+  {
+    "content": "Corrigir concatenações removendo barra inicial em glpi.py",
+    "status": "completed",
+    "activeForm": "Corrigindo concatenações em glpi.py"
+  },
+  {
+    "content": "Corrigir concatenações removendo barra inicial em utils.py",
+    "status": "completed",
+    "activeForm": "Corrigindo concatenações em utils.py"
+  },
+  {
+    "content": "Verificar capitalização do itemtype (Computer vs computer)",
+    "status": "completed",
+    "activeForm": "Verificando capitalização do itemtype"
+  },
+  {
+    "content": "Criar requisição de teste no Postman",
+    "status": "in_progress",
+    "activeForm": "Criando requisição de teste no Postman"
+  }
+]

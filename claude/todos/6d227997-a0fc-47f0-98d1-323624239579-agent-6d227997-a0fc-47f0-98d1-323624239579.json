@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Phase 1: Understanding (purpose, constraints, criteria gathered)",
+    "status": "completed",
+    "activeForm": "Gathering understanding of the problem"
+  },
+  {
+    "content": "Phase 2: Exploration (2-3 approaches proposed and evaluated)",
+    "status": "completed",
+    "activeForm": "Exploring different approaches"
+  },
+  {
+    "content": "Phase 3: Design Presentation (design validated in sections)",
+    "status": "completed",
+    "activeForm": "Presenting design in sections"
+  },
+  {
+    "content": "Phase 4: Design Documentation (design written to docs/plans/)",
+    "status": "completed",
+    "activeForm": "Writing design documentation"
+  },
+  {
+    "content": "Phase 5: Worktree Setup (if implementing)",
+    "status": "pending",
+    "activeForm": "Setting up isolated workspace"
+  },
+  {
+    "content": "Phase 6: Planning Handoff (if implementing)",
+    "status": "pending",
+    "activeForm": "Creating implementation plan"
+  }
+]

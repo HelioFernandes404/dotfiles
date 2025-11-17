@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "plugins": {
+    "superpowers@superpowers-marketplace": {
+      "version": "3.4.1",
+      "installedAt": "2025-11-10T17:29:45.052Z",
+      "lastUpdated": "2025-11-10T17:29:45.052Z",
+      "installPath": "/home/helio/.claude/plugins/cache/superpowers",
+      "gitCommitSha": "02c87670de64b236ffd3239305dd71190983679d",
+      "isLocal": false
+    },
+    "superpowers-chrome@superpowers-marketplace": {
+      "version": "1.3.0",
+      "installedAt": "2025-10-24T00:34:49.715Z",
+      "lastUpdated": "2025-10-24T00:34:49.715Z",
+      "installPath": "/home/helio/.claude/plugins/cache/superpowers-chrome",
+      "gitCommitSha": "5ba8f8b5031b76bbb6feec7a6714938618a9669c",
+      "isLocal": false
+    }
+  }
+}

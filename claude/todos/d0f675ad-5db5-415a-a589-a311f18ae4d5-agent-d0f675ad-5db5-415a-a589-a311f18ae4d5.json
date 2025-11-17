@@ -1,0 +1,37 @@
+[
+  {
+    "content": "Investigar permissões da aplicação InfraGen no container",
+    "status": "completed",
+    "activeForm": "Investigando permissões da aplicação InfraGen no container"
+  },
+  {
+    "content": "Verificar se psutil consegue acessar dados do sistema no container",
+    "status": "completed",
+    "activeForm": "Verificando se psutil consegue acessar dados do sistema no container"
+  },
+  {
+    "content": "Analisar problema específico do CPU percent no psutil",
+    "status": "completed",
+    "activeForm": "Analisando problema específico do CPU percent no psutil"
+  },
+  {
+    "content": "Corrigir implementação do psutil.cpu_percent() no código",
+    "status": "completed",
+    "activeForm": "Corrigindo implementação do psutil.cpu_percent() no código"
+  },
+  {
+    "content": "Investigar diferença entre teste manual e aplicação em execução",
+    "status": "completed",
+    "activeForm": "Investigando diferença entre teste manual e aplicação em execução"
+  },
+  {
+    "content": "Investigar problema no PrometheusMetricsAdapter export",
+    "status": "completed",
+    "activeForm": "Investigando problema no PrometheusMetricsAdapter export"
+  },
+  {
+    "content": "Investigar por que a aplicação principal não está coletando métricas",
+    "status": "in_progress",
+    "activeForm": "Investigando por que a aplicação principal não está coletando métricas"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "content": "Add global workspace variables to vars/main.yml",
+    "status": "completed",
+    "activeForm": "Adding global workspace variables to vars/main.yml"
+  },
+  {
+    "content": "Update tasks to set global facts for workspace paths",
+    "status": "in_progress",
+    "activeForm": "Updating tasks to set global facts for workspace paths"
+  },
+  {
+    "content": "Create example usage documentation",
+    "status": "pending",
+    "activeForm": "Creating example usage documentation"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "content": "Execute the setup script to capture the actual error",
+    "status": "completed",
+    "activeForm": "Executing setup script to capture error"
+  },
+  {
+    "content": "Analyze the error and identify root cause",
+    "status": "completed",
+    "activeForm": "Analyzing error and identifying root cause"
+  },
+  {
+    "content": "Fix the identified issue(s)",
+    "status": "completed",
+    "activeForm": "Fixing the identified issue(s)"
+  },
+  {
+    "content": "Verify the fix works",
+    "status": "in_progress",
+    "activeForm": "Verifying the fix works"
+  }
+]

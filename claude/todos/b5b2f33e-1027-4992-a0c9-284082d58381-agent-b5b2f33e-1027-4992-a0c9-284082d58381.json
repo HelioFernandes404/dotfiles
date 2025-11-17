@@ -1,0 +1,17 @@
+[
+  {
+    "content": "Verificar se o diretório ~/.config/yazi existe e criar se necessário",
+    "status": "in_progress",
+    "activeForm": "Verificando diretório ~/.config/yazi"
+  },
+  {
+    "content": "Copiar yazi.toml para ~/.config/yazi",
+    "status": "pending",
+    "activeForm": "Copiando yazi.toml"
+  },
+  {
+    "content": "Copiar keymap.toml para ~/.config/yazi",
+    "status": "pending",
+    "activeForm": "Copiando keymap.toml"
+  }
+]

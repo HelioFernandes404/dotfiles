@@ -1,0 +1,22 @@
+[
+  {
+    "content": "Verificar mudanças no Helm chart local",
+    "status": "completed",
+    "activeForm": "Verificando mudanças no Helm chart local"
+  },
+  {
+    "content": "Fazer commit e push das mudanças para o repositório",
+    "status": "in_progress",
+    "activeForm": "Fazendo commit e push das mudanças"
+  },
+  {
+    "content": "Forçar reconciliação do FluxCD para aplicar as mudanças",
+    "status": "pending",
+    "activeForm": "Forçando reconciliação do FluxCD"
+  },
+  {
+    "content": "Verificar se o deploy foi bem-sucedido",
+    "status": "pending",
+    "activeForm": "Verificando se o deploy foi bem-sucedido"
+  }
+]

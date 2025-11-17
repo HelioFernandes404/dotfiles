@@ -1,0 +1,22 @@
+[
+  {
+    "content": "Analisar estrutura atual do todo.md",
+    "status": "completed",
+    "activeForm": "Analisando estrutura atual do todo.md"
+  },
+  {
+    "content": "Organizar e refinar o conteúdo",
+    "status": "in_progress",
+    "activeForm": "Organizando e refinando o conteúdo"
+  },
+  {
+    "content": "Melhorar formatação e legibilidade",
+    "status": "pending",
+    "activeForm": "Melhorando formatação e legibilidade"
+  },
+  {
+    "content": "Adicionar seções faltantes",
+    "status": "pending",
+    "activeForm": "Adicionando seções faltantes"
+  }
+]

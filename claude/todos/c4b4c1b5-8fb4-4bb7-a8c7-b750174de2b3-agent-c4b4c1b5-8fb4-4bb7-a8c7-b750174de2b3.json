@@ -1,0 +1,37 @@
+[
+  {
+    "content": "Explore codebase to identify scripts needing translation",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Translate all identified scripts to English",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Fix main.py - translate Portuguese arguments and messages",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Fix script_old.py - translate Portuguese strings and comments",
+    "status": "completed",
+    "id": "4"
+  },
+  {
+    "content": "Fix src/transcriber.py - translate Portuguese strings and prompts",
+    "status": "completed",
+    "id": "5"
+  },
+  {
+    "content": "Fix src/processor.py - clean up mixed language code",
+    "status": "completed",
+    "id": "6"
+  },
+  {
+    "content": "Fix src/audio_converter.py - correct remaining Portuguese strings",
+    "status": "completed",
+    "id": "7"
+  }
+]
