@@ -1,68 +1,122 @@
-Host            desktop-stg
-  User            helio
-  HostName      192.168.100.132
+# Global optimizations for all hosts
+Host *
+  # Connection multiplexing (reuse existing connections)
+  ControlMaster auto
+  ControlPath ~/.ssh/sockets/%r@%h:%p
+  ControlPersist 60m
 
-Host            prod-primaria
-  User            helio
-  HostName        3.209.185.128
+  # Compression (helps over VPN)
+  Compression yes
 
-Host              prod-secundaria
-  User            helio
-  HostName        52.53.215.198
+  # Keep connections alive through VPN
+  ServerAliveInterval 60
+  ServerAliveCountMax 3
+  TCPKeepAlive yes
 
-Host thinkpad-NOC
-  User  helio
-  HostName  192.168.90.101
+  # Faster ciphers (less CPU overhead)
+  Ciphers chacha20-poly1305@openssh.com,aes128-gcm@openssh.com,aes256-gcm@openssh.com
+
+  # Reuse DNS lookups
+  AddressFamily inet
+
+Host desktop-stg
+  User         helio
+  HostName     192.168.100.132
+
+Host SYSTEMFRAME
+  User         root
+  HostName     10.15.0.1
+  ProxyJump    prod-primaria
+
+Host prod-primaria
+  User         helio
+  HostName     3.209.185.128
+
+Host prod-secundaria
+  User         helio
+  HostName     52.53.215.198
+
+Host systemframe-logs
+  User         helio
+  HostName     45.235.242.71
+
+Host systemframe-staging
+  User         helio
+  HostName     34.204.12.70
+
+Host systemframe-prod-FTZ
+  User         helio
+  HostName     45.174.66.105
+
+Host systemframe-prod-SPO
+  User         helio
+  HostName     45.235.242.69
+
+Host systemframe-grafana
+  User         helio
+  HostName     98.89.25.106
+
+Host systemframe-itsm
+  User         ec2-user
+  HostName     3.143.216.26
+
+Host bi-production
+  User         helio
+  HostName     107.20.231.86
+
+Host thinkpad-dev-monit
+  User         helio
+  HostName     192.168.90.101
   ForwardAgent yes
 
-Host thinkpad-dev
-  User  helio
-  HostName  192.168.90.104
+Host thinkpad-dev-medium
+  User         helio
+  HostName     192.168.90.104
   ForwardAgent yes
-
-  # Host thinkpad-dev-large
-  # User  helio
-  # HostName  192.168.90.131
-  # ForwardAgent yes
 
 Host MONIT-MTZ
-  User            helio
-  HostName        10.10.11.129
-  ForwardAgent    yes
-  ProxyJump       thinkpad
+  User         helio
+  HostName     10.10.11.129
+  ForwardAgent yes
+  ProxyJump    prod-primaria
 
-Host granado-linux-fabrica
-  User            helio
-  HostName        10.20.0.169
-  ProxyJump       granado-linux-mtz
-  ForwardAgent      yes
-
-Host granado-linux-cd
-  User            helio
-  HostName        10.50.0.239
-  ProxyJump       granado-linux-mtz
-  ForwardAgent  yes
-
-Host granado-linux-stg
-  User      helio
-  HostName  10.10.11.84
-  ProxyJump     thinkpad-dev
+Host thinkpad-dev-large
+  User         helio
+  HostName     192.168.90.131
   ForwardAgent yes
 
-Host              MONIT-DSSP
-    User              helio
-    HostName        10.70.0.237
-    ProxyJump        granado-linux-mtz
+Host thinkpad-proxmox
+  User         helio
+  HostName     192.168.90.199
+  ForwardAgent yes
 
-Host              MONIT-MTZ-DEV
-    User              helio
-    HostName        10.10.11.129
-    ProxyJump       granado-linux-mtz
-    ForwardAgent  yes
+Host MONIT-FAB
+  User         helio
+  HostName     10.20.0.169
+  ProxyJump    prod-primaria
+  ForwardAgent yes
+
+Host MONIT-CD
+  User         helio
+  HostName     10.50.0.239
+  ProxyJump    prod-primaria
+  ForwardAgent yes
+
+Host MONIT-DSSP
+  User      helio
+  HostName  10.70.0.237
+  ProxyJump prod-primaria
+
+Host MONIT-MTZ-DEV
+  User         helio
+  HostName     10.10.11.84
+  ProxyJump    prod-primaria
+  ForwardAgent yes
 
 Host lyx-stg
-  User helio
+  User     helio
   HostName 10.0.0.10
+  ProxyJump prod-primaria
 
 Host github.com-cogc
   HostName github.com
@@ -70,40 +124,36 @@ Host github.com-cogc
   IdentityFile ~/.ssh/id_ed25519_cogc
 
 Host cogcs
-  HostName 144.22.140.217
-  User ubuntu
-  IdentityFile ~/.ssh/cogcs
+  User                   ubuntu
+  HostName               144.22.140.217
+  IdentityFile           ~/.ssh/cogcs
+  IdentitiesOnly         yes
+  PubkeyAuthentication   yes
+  PreferredAuthentications publickey
 
 Host stg-tempadmin
-  HostName 144.22.140.217
-  User tempadmin
+  User         tempadmin
+  HostName     144.22.140.217
   IdentityFile ~/.ssh/cogcs
 
-
-
 Host rpa-teste
-  User helio
+  User     helio
   HostName 10.10.11.124
+  ProxyJump prod-primaria
 
-Host            FTZ02gpu
-  HostName      45.174.64.55
-  Port          22322
-  ForwardAgent  yes
-  User          helio
+Host FTZ02gpu
+  User         helio
+  HostName     45.174.64.55
+  Port         22322
+  ForwardAgent yes
 
-Host            aws-stage-01
-  User            helio
-  HostName        44.210.137.63
-  ForwardAgent    yes
+Host aws-stage-01
+  User         helio
+  HostName     44.210.137.63
+  ForwardAgent yes
 
 Host helio-oracle
   User opc
   HostName 168.138.252.239
   IdentityFile ~/.ssh/helio-oracle.key
   StrictHostKeyChecking no
-
-
-Host              thinkpad-dev-large
-    User            helio
-    HostName        100.64.5.10
-    ForwardAgent    yes
