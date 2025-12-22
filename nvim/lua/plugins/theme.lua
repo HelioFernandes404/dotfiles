@@ -1,0 +1,1 @@
+/home/helio/.config/omarchy/current/theme/neovim.lua
