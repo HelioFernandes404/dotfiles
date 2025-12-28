@@ -1,0 +1,35 @@
+# If not running interactively, don't do anything (leave this at the top of this file)
+[[ $- != *i* ]] && return
+
+# All the default Omarchy aliases and functions
+# (don't mess with these directly, just overwrite them here!)
+source ~/.local/share/omarchy/default/bash/rc
+
+# Add your own exports, aliases, and functions here.
+#
+# Make an alias for invoking commands you use constantly
+# alias p='python'
+export PATH="$HOME/.local/bin:$PATH"
+export KUBE_EDITOR=nvim
+
+alias lg='lazygit'
+alias cld='claude'
+alias gmn='gemini'
+alias dk='lazydocker'
+alias ll='ls -la'
+alias vi='nvim'
+alias vim='nvim'
+
+alias venv='source .venv/bin/activate'
+
+# Trocar para dev com confirmação
+alias aws-dev='export AWS_PROFILE=DeveloperPermissionSet-241533163102 && echo "✅ Usando DEV"'
+
+# Trocar para prod com confirmação
+alias aws-prod='export AWS_PROFILE=PowerUserAccess-730335278395 && echo "✅ Usando PROD"'
+
+# Limpar profile
+alias aws-unset='unset AWS_PROFILE && echo "❌ Profile removido"'
+
+# Ver profile atual com detalhes
+alias aws-which='echo "Profile: $AWS_PROFILE" && aws sts get-caller-identity 2>/dev/null || echo "Não autenticado"'

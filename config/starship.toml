@@ -1,0 +1,40 @@
+add_newline = true
+command_timeout = 200
+format = "[$directory$git_branch$git_status]($style)$character$python"
+
+# Python
+[python]
+symbol = "\ue73c " # 
+format = '[${symbol}(\($virtualenv\) )]($style)'
+style = "bold yellow"
+pyenv_version_name = false
+detect_extensions = ["py"]
+detect_files = [".python-version", "Pipfile", "requirements.txt", "pyproject.toml", "setup.py"]
+
+[character]
+error_symbol = "[✗](bold red)"
+success_symbol = "[❯](bold green)"
+
+[directory]
+truncation_length = 2
+truncation_symbol = "…/"
+repo_root_style = "bold blue"
+repo_root_format = "[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style) "
+
+[git_branch]
+format = "[$branch]($style) "
+style = "italic cyan"
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style) )'
+style = "bold yellow"
+conflicted = "[=$count](bold red) "
+ahead = "[⇡$count](bold green) "
+behind = "[⇣$count](bold red) "
+diverged = "[⇡$ahead_count](bold green)[⇣$behind_count](bold red) "
+untracked = "[?$count](bold red) "
+stashed = "[*$count](bold cyan) "
+modified = "[!$count](bold yellow) "
+staged = "[+$count](bold green) "
+renamed = "[»$count](bold yellow) "
+deleted = "[✘$count](bold red) "
