@@ -136,7 +136,7 @@ git push
 
 ## 🌟 Repositórios de inspiração
 
-- [Awesome Dotfiles](https://github.com/webpro/awesome-dotfiles)
+- [Awesome Dotfiles](https://raw.githubusercontent.com/webpro/awesome-dotfiles/refs/heads/master/README.md)
 - [GitHub Dotfiles](https://dotfiles.github.io/)
 
 ## 📄 Licença
