@@ -8,5 +8,6 @@
     "superpowers@superpowers-marketplace": true,
     "superpowers-chrome@superpowers-marketplace": false
   },
-  "alwaysThinkingEnabled": true
+  "alwaysThinkingEnabled": true,
+  "skipDangerousModePermissionPrompt": true
 }

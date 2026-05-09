@@ -4,7 +4,7 @@
 
 set -e
 
-DOTFILES_DIR="$HOME/dotfiles"
+DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 echo "🗑️  Removendo symlinks dos dotfiles..."
 
@@ -35,6 +35,15 @@ remove_symlink "$HOME/.ssh/config"
 
 # Yazi
 remove_symlink "$HOME/.config/yazi"
+
+# Omarchy
+remove_symlink "$HOME/.config/omarchy/themes/github-dark"
+remove_symlink "$HOME/.config/omarchy/backgrounds/github-dark"
+remove_symlink "$HOME/.config/omarchy/themed/starship.toml.tpl"
+remove_symlink "$HOME/.config/omarchy/hooks/theme-set"
+
+# Fish
+remove_symlink "$HOME/.config/fish/conf.d/omarchy-starship-config.fish"
 
 # Neovim
 remove_symlink "$HOME/.config/nvim"
