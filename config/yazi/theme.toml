@@ -1,8 +1,0 @@
-"$schema" = "https://yazi-rs.github.io/schemas/theme.json"
-
-# Sem flavor: usa o tema padrao do Yazi (respeita a paleta do terminal/OS).
-# Para usar flavors (beta), descomente e escolha um nome instalado:
-#
-# [flavor]
-# dark  = "dracula"
-# light = "gruvbox"

@@ -1,6 +1,5 @@
 # A TOML linter such as https://taplo.tamasfe.dev/ can use this schema to validate your config.
 # If you encounter any issues, please make an issue at https://github.com/yazi-rs/schemas.
-"$schema" = "https://yazi-rs.github.io/schemas/yazi.json"
 
 [mgr]
 ratio          = [ 1, 4, 3 ]
@@ -70,7 +69,7 @@ play = [
 [open]
 rules = [
   # Folder → use nvim_dir first
-  { name = "*/", use = [ "nvim_dir", "open", "reveal" ] },
+  { url = "*/", use = [ "nvim_dir", "open", "reveal" ] },
 
   # Text
   { mime = "text/*", use = [ "edit", "reveal" ] },
@@ -92,7 +91,7 @@ rules = [
   { mime = "inode/empty", use = [ "edit", "reveal" ] },
 
   # Fallback
-  { name = "*", use = [ "open", "reveal" ] },
+  { url = "*", use = [ "open", "reveal" ] },
 ]
 
 [tasks]
@@ -174,4 +173,3 @@ sort_by        = "none"
 sort_sensitive = false
 sort_reverse   = false
 sort_translit  = false
-

@@ -14,9 +14,10 @@ export KUBE_EDITOR=nvim
 
 alias lg='lazygit'
 alias cld='claude'
-alias cldd='claude --dangerously-skip-permissions'
+alias cc='claude --dangerously-skip-permissions'
 alias gmn='gemini'
 alias dk='lazydocker'
+alias v='nvim'
 alias ll='ls -la'
 alias vi='nvim'
 alias vim='nvim'
