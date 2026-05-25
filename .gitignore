@@ -6,6 +6,8 @@ Thumbs.db
 *.backup
 *.bak
 *~
+/.dotfiles-backups/
+/bin/
 
 # Arquivos sensíveis (tokens, senhas, etc.)
 *.token

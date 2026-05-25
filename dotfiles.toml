@@ -1,0 +1,21 @@
+[[links]]
+source = "git/gitconfig"
+target = "~/.gitconfig"
+groups = ["core", "git"]
+
+[[links]]
+source = "ssh/config"
+target = "~/.ssh/config"
+groups = ["core", "ssh"]
+mode = "0600"
+parent_mode = "0700"
+
+[[links]]
+source = "nvim"
+target = "~/.config/nvim"
+groups = ["editor", "nvim"]
+
+[[links]]
+source = "yazi"
+target = "~/.config/yazi"
+groups = ["terminal", "yazi"]

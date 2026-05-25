@@ -1,144 +1,144 @@
-# 🏠 Dotfiles
+# Dotfiles
 
-Configurações pessoais para sistemas Unix-like (Linux/macOS).
+Personal Linux dotfiles managed by a small Go CLI.
 
-## 📋 Conteúdo
+## Contents
 
-Este repositório contém configurações para:
+- `git/gitconfig` -> `~/.gitconfig`
+- `ssh/config` -> `~/.ssh/config`
+- `nvim` -> `~/.config/nvim`
+- `yazi` -> `~/.config/yazi`
+- `dotfiles.toml` declares managed symlinks and groups
+- `cmd/dotfiles` contains the CLI entrypoint
+- `internal/dotfiles` contains the implementation
 
-- **ZSH** - Shell configuration (`.zshrc`, `.zprofile`)
-- **Git** - Version control settings (`.gitconfig`)
-- **Kitty** - Terminal emulator config (`kitty.conf`, `current-theme.conf`)
-- **SSH** - SSH client configuration (`.ssh/config`) ⚠️ **sem chaves privadas**
+## Bootstrap
 
-## 🚀 Instalação
-
-### Primeira instalação
+Clone the repository and install the CLI binary:
 
 ```bash
-# Clone o repositório
-git clone https://github.com/SEU_USUARIO/dotfiles.git ~/dotfiles
-
-# Entre no diretório
+git clone https://github.com/HelioFernandes404/dotfiles.git ~/dotfiles
 cd ~/dotfiles
-
-# Execute o script de instalação
-./install.sh
+make bootstrap
 ```
 
-### Atualizando
+`make bootstrap` builds the CLI and copies it to `~/.local/bin/dotfiles`. It does not install any symlinks.
+
+## Usage
+
+Run commands from the repository root. The CLI uses `dotfiles.toml` as the root marker and manifest.
 
 ```bash
-cd ~/dotfiles
-git pull origin main
-./install.sh
+dotfiles validate
+dotfiles status
+dotfiles install --group core
+dotfiles install --group editor
+dotfiles install --group terminal
+dotfiles install --all
+dotfiles uninstall --group core
+dotfiles doctor
 ```
 
-## 🔄 Como funciona
-
-O script `install.sh` cria **symlinks** dos arquivos de configuração do diretório `~/dotfiles` para o seu `$HOME`. Isso permite que você:
-
-- ✅ Versione suas configurações com Git
-- ✅ Mantenha tudo organizado em um único lugar
-- ✅ Sincronize entre diferentes máquinas
-- ✅ Restaure configurações rapidamente em sistemas novos
-
-### Estrutura
-
-```
-~/dotfiles/
-├── zsh/
-│   ├── zshrc       → ~/.zshrc
-│   └── zprofile    → ~/.zprofile
-├── git/
-│   └── gitconfig   → ~/.gitconfig
-├── kitty/
-│   ├── kitty.conf          → ~/.config/kitty/kitty.conf
-│   └── current-theme.conf  → ~/.config/kitty/current-theme.conf
-├── ssh/
-│   ├── config      → ~/.ssh/config
-│   └── README.md   (avisos de segurança)
-├── install.sh      (script de instalação)
-├── uninstall.sh    (script de remoção)
-└── README.md
-```
-
-## 🗑️ Desinstalação
-
-Para remover os symlinks:
+The Makefile uses the freshly built `./bin/dotfiles` binary for development shortcuts:
 
 ```bash
-cd ~/dotfiles
-./uninstall.sh
+make validate
+make status
+make install-core
+make install-editor
+make install-terminal
+make uninstall-core
+make test
 ```
 
-## 📝 Adicionando novos dotfiles
+## Manifest
 
-1. Copie o arquivo para a pasta apropriada em `~/dotfiles/`
-2. Adicione uma linha no `install.sh` para criar o symlink
-3. Adicione uma linha no `uninstall.sh` para remover o symlink
-4. Commit e push
+Links are explicit in `dotfiles.toml`:
+
+```toml
+[[links]]
+source = "git/gitconfig"
+target = "~/.gitconfig"
+groups = ["core", "git"]
+```
+
+Supported fields:
+
+- `source`: path inside this repository.
+- `target`: absolute target path after expanding `~`, `$HOME`, or `${HOME}`.
+- `groups`: one or more groups used for filtering.
+- `mode`: optional octal mode applied to the source file.
+- `parent_mode`: optional octal mode applied to the target parent directory.
+
+Initial groups:
+
+- `core`: Git and SSH.
+- `editor`: Neovim.
+- `terminal`: Yazi.
+- Specific groups also exist: `git`, `ssh`, `nvim`, `yazi`.
+
+Multiple groups use OR semantics:
 
 ```bash
-# Exemplo: adicionar .tmux.conf
-mkdir -p ~/dotfiles/tmux
-cp ~/.tmux.conf ~/dotfiles/tmux/tmux.conf
-
-# Edite install.sh para adicionar:
-# create_symlink "$DOTFILES_DIR/tmux/tmux.conf" "$HOME/.tmux.conf"
-
-# Commit
-git add .
-git commit -m "Add tmux configuration"
-git push
+dotfiles install --group core,editor
 ```
 
-## ⚠️ Importante
+## Behavior Contract
 
-- Os arquivos originais são **automaticamente backupeados** em `~/dotfiles_backup_*` antes da instalação
-- **Nunca** commite arquivos com senhas, tokens ou informações sensíveis
-- Revise o `.gitignore` para garantir que arquivos sensíveis não sejam versionados
+- Linux only for now.
+- `install` and `uninstall` require `--group` or `--all`.
+- `status` shows all links by default and accepts `--group` as a filter.
+- `validate` always validates the full manifest.
+- Duplicate targets are invalid.
+- Missing parent directories are created idempotently.
+- Symlinks use absolute source paths.
+- Existing correct symlinks are left unchanged.
+- Existing files, directories, broken symlinks, or symlinks pointing elsewhere are conflicts.
+- Conflicts are backed up inside `.dotfiles-backups/<timestamp>/...` before replacement.
+- If a backup is needed, `install` prints the plan and asks for confirmation.
+- `--yes` skips backup confirmation.
+- `--dry-run` prints planned actions without changing files.
+- `uninstall` removes only symlinks that point to the expected repository source.
+- `uninstall` never removes parent directories.
+- The CLI stores no state. The manifest and filesystem are the source of truth.
 
-### ⚠️ Segurança SSH
+## Doctor
 
-**ATENÇÃO:** Este repositório contém apenas o arquivo `ssh/config`.
+`dotfiles doctor` is read-only. It checks:
 
-**NUNCA adicione ao Git:**
-- ❌ Chaves privadas SSH (`id_rsa`, `id_ed25519`, etc.)
-- ❌ Arquivos `known_hosts`
-- ❌ Chaves `.pem`, `.ppk`
-- ❌ Tokens ou certificados
+- Linux support.
+- Manifest presence and validity.
+- `go` and `make` availability as warnings.
+- Whether `~/.local/bin` is in `PATH`.
+- SSH directory permissions when `~/.ssh` exists.
+- Link status summary.
 
-O `.gitignore` já está configurado para bloquear esses arquivos, mas sempre revise antes de commitar!
-
-## 🔧 Personalização
-
-Antes de fazer push para um repositório público:
-
-1. Revise os arquivos e remova informações pessoais
-2. Configure seu Git com suas informações:
-   ```bash
-   git config user.name "Seu Nome"
-   git config user.email "seu@email.com"
-   ```
-
-## 📦 Backup automático
-
-Você pode criar um script para fazer commit automático das mudanças:
+Use verbose mode for full link status:
 
 ```bash
-#!/bin/bash
-cd ~/dotfiles
-git add -A
-git commit -m "Update dotfiles - $(date +'%Y-%m-%d %H:%M')"
-git push
+dotfiles doctor --verbose
 ```
 
-## 🌟 Repositórios de inspiração
+Warnings do not make `doctor` fail. Errors do.
 
-- [Awesome Dotfiles](https://raw.githubusercontent.com/webpro/awesome-dotfiles/refs/heads/master/README.md)
-- [GitHub Dotfiles](https://dotfiles.github.io/)
+## Exit Codes
 
-## 📄 Licença
+- `0`: success.
+- `1`: general error, failed status, cancelled confirmation, or doctor error.
+- `2`: invalid manifest.
+- `3`: installation conflict or install failure.
+- `4`: invalid usage.
 
-Use livremente para suas próprias configurações!
+## Design Rationale
+
+- Go was chosen to produce a single binary with no runtime dependency.
+- TOML was chosen because this repo already uses TOML and it is easy to edit by hand.
+- The manifest is explicit instead of inferred from folders to avoid unsafe path guessing.
+- Groups allow both broad installs, such as `core`, and specific installs, such as `nvim`.
+- No local state is stored because symlink targets can be derived from the manifest and filesystem.
+- Backups live inside the repo under `.dotfiles-backups/` but are ignored by Git.
+- Make is only a convenience layer; the CLI is the source of truth.
+
+## Security
+
+Never commit secrets, tokens, private SSH keys, `known_hosts`, or machine-specific credentials. The repository intentionally tracks only `ssh/config`, not SSH keys.
