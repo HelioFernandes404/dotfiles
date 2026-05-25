@@ -37,7 +37,17 @@ ssh/*.pub
 
 # Claude Code - Credenciais e histórico de debug
 claude/.credentials.json
+claude/backups/
+claude/cache/
 claude/debug/
+claude/downloads/
 claude/file-history/
 claude/projects/
 claude/history.jsonl
+claude/paste-cache/
+claude/session-env/
+claude/sessions/
+claude/shell-snapshots/
+claude/stats-cache.json
+claude/telemetry/
+claude/todos/

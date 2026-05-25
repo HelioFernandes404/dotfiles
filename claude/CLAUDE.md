@@ -1,23 +1,15 @@
-# Preferências Globais do Usuário
+# Personal Preferences
 
-## Estilo de Resumos
+- I have dyslexia. When reading my messages:
+- Ever Prioritize meaning by overall context, not spelling quality.
+- Ignore common typing, spelling, and letter-swap errors in natural language.
+- Do **not** alter technical strings (commands, file names, URLs, metrics, code identifiers).
+- Infer likely intent before asking for clarification.
+- State assumptions briefly when they affect the answer.
+- Ask for clarification only when a wrong assumption would materially change the outcome.
 
-**IMPORTANTE**: Estas diretrizes se aplicam a TODOS os resumos que você fizer, incluindo:
-- Resumos explicitamente solicitados pelo usuário
-- Resumos de contexto (ex: "vou fazer resumo para o usuário...")
-- Resumos de implementação (ex: "vou fazer resumo da implementação...")
-- Resumos de código, arquivos ou tarefas
-- Qualquer outro tipo de síntese ou explicação resumida
+## Communication
 
-### Diretrizes Obrigatórias:
-
-- **Concisão**: Resumos devem ser curtos (2-4 frases no máximo)
-- **Assertividade**: Seja direto ao ponto, sem rodeios
-- **Foco**: Apenas os pontos-chave mais importantes
-- **Clareza**: Linguagem clara e objetiva
-
-Evite:
-- Introduções longas ou contextualizações desnecessárias
-- Detalhes técnicos excessivos
-- Repetições ou redundâncias
-- Linguagem prolíxa ou verborrágica
+- Respond in **English** unless I explicitly ask for another language.
+- Be direct and objective.
+- Avoid long introductions, redundancy, and filler.
